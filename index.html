@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            height: 120vh;
+        }
+        #app{
+            position: relative;
+            top:10vh
+        }
+
+        .navbar {
+            height: 10vh;
+            width: 100vw;
+            background-color: black;
+            opacity: 0.5;
+            position: fixed;
+            top: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div>
+        <button>Click me</button>
+    </div>
+    <input type="text" class="debounce">
+    <script src="index.js"></script>
+     <script src="Interview1.js"></script> -->
+    <!-- <div>
+        <nav class="navbar"></nav>
+        <main><div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div></main>
+        <div id="app">Hello Vanilla!
+            We use the same configuration as Parcel to bundle this sandbox, you can find more info about Parcel here.
+        </div>
+    </div> -->
+    <!-- tell me the problem here
+        apply the style to the navbar as fixed
+        and the main content should be below the navbar
+        and the navbar should be transparent
+        and the main content should be visible
+        give me the solution for this
+        
+        
+    -->
+    <!-- <div class="G"> Gparent
+        <div class="P">parent
+            <div class="C">Child</div>
+        </div>
+      </div> -->
+      <!-- <ul id="list">
+        <li class="LI1">Item 1</li>
+        <li class="LI1">Item 2</li>
+        <li>Item 3</li>
+      </ul> -->
+    <div id="app"></div>
+    <button onclick="startStopW()">Start</button>
+    <button onclick="stopStopW()">Stop</button>
+    <button onclick="resetStopW()">Reset</button>
+    <script src="./stopWatch.js"></script>
+    <!-- <script>
+        let stopW=false;
+        let milis =0;
+        let second = 0;
+        let timer=null;
+        let app = document.getElementById('app');
+        app.innerText=second+'s: '+milis;
+        console.log("AM")
+        function startStopW(){
+            console.log("PM")
+            if(!stopW){
+                timer=setInterval(()=>{
+                milis+=1;
+                if(milis/100==1){
+                    second+=1;
+                    milis=0
+                }
+                app.innerText=second+'s: '+milis;
+                stopW=true;
+                },10);
+            }
+            
+        }
+        function stopStopW(){
+            clearInterval(timer)
+            timer=null;
+            stopW=false;
+        }
+        function resetStopW(){
+            stopStopW();
+            milis=0;
+            second=0
+            app.innerText=second+'s: '+milis;
+        }
+    </script> -->
+    <!-- <script src="./event.js"></script> -->
+</body>
+
+</html>
