@@ -1,0 +1,37 @@
+{
+    "Joe Brown": {
+        "goals": 0,
+        "assists": 0,
+        "points": 0,
+        "ppg": 0,
+        "ppa": 0,
+        "pims": 0
+    },
+    "Jim Bob": {
+        "goals": 3,
+        "assists": 5,
+        "points": 8,
+        "ppg": 0,
+        "ppa": 1,
+        "pims": 0
+    },
+    "Harry Styles": {
+        "goals": 1,
+        "assists": 1,
+        "points": 2,
+        "ppg": 0,
+        "ppa": 0,
+        "pims": 0
+    },
+    "Craig Mack": {
+        "goals": 8,
+        "assists": 10,
+        "points": 18,
+        "ppg": 0,
+        "ppa": 0,
+        "pims": 0
+    },
+    "Dog": {
+        "bones": 100
+    }
+  }

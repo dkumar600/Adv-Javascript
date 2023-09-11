@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="section-1">
+            <div id="subsection-1">
+                <div id="sub-subsection-1">
+                    <p id="paragraph-1">This is a deeply nested paragraph.</p>
+                </div>
+            </div>
+        </div>
+        <div id="section-2">
+            <div id="subsection-2">
+                <div id="sub-subsection-2">
+                    <p id="paragraph-2">Another deeply nested paragraph.2</p>
+                    <p id="paragraph-3">Another deeply nested paragraph.3</p>
+                    <p id="paragraph-4">Another deeply nested paragraph.4</p>
+                    <p id="paragraph-5">Another deeply nested paragraph.5</p>
+                    <p id="paragraph-6">Another deeply nested paragraph. 6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const getElemId = (idName) => {
+            const childN = document.body.children;
+            function finder(ch){
+                let found;
+                for(let i=0;i<ch.length;i++){
+                    if(ch[i].id===idName){
+                        return ch[i];
+                    }else if(ch[i].children!==undefined){
+                        found = finder(ch[i].children);
+                    }
+                }
+                if(found){
+                    return found;
+                }else{
+                    return undefined
+                }
+            }
+        
+            for(let i=0;i<childN.length;i++){
+                if(childN[i].id===idName){
+                    return childN[i];
+                }else if(childN[i].children!==undefined){
+                    const outerF = finder(childN[i].children);
+                    if(outerF){
+                        return outerF;
+                    }
+                }
+            }
+
+        }
+        //getElem1("paragraph-2");
+        console.log(getElemId("paragraph-6").innerHTML)
+    </script>
+</body>
+</html>
